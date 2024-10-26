@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="menu" class="sticky-top">
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <h1>Planetario</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="menu-button">
+                    <ul class="nav nav-pills d-block d-lg-flex text-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cards-cont" class="nav-link">Planetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#rodape" class="nav-link">Rodapé</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+   <div id="section-cont">
+        <section id="slide">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./imagens/slide/_1.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slide/_2 (1).jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slide/_3.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/slide/Cinematic_Kino_Crie_uma_imagem_de_todas_os_Planetas_do_sistema_0.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <!-- Botões de controle -->
+                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="cards-cont">
+            <div class="container">
+                <div class="row text-center mt-4 mb-4">
+                    <h2 class="text-2">Planetas e Características</h2>
+                </div>
+                 <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Terra</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/slide/_1.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/slide/_2 (1).jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title justify-content-space-between">
+                                    Diâmetro: <span>12.742 km</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Massa: <span>5,97 x 10²⁴ kg</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Gravidade: <span>9,8 m/s²</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Rotação: <span>23h 56m 4s</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Órbita ao <br> redor do sol: <span>365,25 dias</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Distancia <br> média do sol: <span>149,6 milhões km</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Atmosfera principal: <span>N₂, 02</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Temperatura média: <span>15°C</span>
+                                </h5>
+                                <h5 class="card-title justify-content-space-between">
+                                    Número de luas: <span>1 (Lua)</span>
+                                </h5>
+                                <p class="card-text">
+                                    A Terra é o terceiro planeta a partir do Sol e o único conhecido por abrigar vida. Sua superfície é composta por 71% de
+                                    água e possui uma atmosfera rica em nitrogênio e oxigênio, essencial para a vida como conhecemos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Marte</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards2">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_a_photo_of_the_planet_Mars_floating_in_1.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/imagem/a-superficie-do-planeta-marte_1013220-67.avif" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards2">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards2">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards2" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Diâmetro: <span>6.779 km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Massa: <span>6,39 x 10²³ kg</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Gravidade: <span>3,71 m/s²</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Rotação: <span>24h 37m 22s</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Órbita ao <br> redor do Sol: <span>687 dias</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Distância <br> média do Sol: <span>227,9 milhões km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Atmosfera principal: <span>CO₂, N₂, Ar</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Temperatura média: <span>-63°C</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Número de luas: <span>2 (Fobos,<br> Deimos)</span>
+                                </h5>
+                                <p class="card-text">
+                                    Marte é o quarto planeta do Sistema Solar e conhecido por sua aparência avermelhada, causada pelo óxido de ferro em
+                                    sua superfície. Sua atmosfera é fina, composta principalmente por dióxido de carbono, e as temperaturas são muito
+                                    frias. O planeta tem duas pequenas luas, Fobos e Deimos, e é um alvo principal na busca por sinais de vida passada.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Mercúrio</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards3">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_planet_Mercury_floatin_3.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/imagem/bacia_caloris_thmb.gif" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards3">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards3">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards3" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Diâmetro: <span>4.880 km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Massa: <span>3,30 x 10²³ kg</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Gravidade: <span>3,7 m/s²</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Rotação: <span>58 dias 15h 30m</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Órbita ao <br> redor do Sol: <span>88 dias</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Distância <br> média do Sol: <span>57,9 milhões km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Atmosfera principal: <span>Oxigênio (O₂), Sódio (Na), Hidrogênio (H₂)</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Temperatura média: <span>167°C</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Número de luas: <span>0</span>
+                                </h5>
+                                <p class="card-text">
+                                    Mercúrio é o planeta mais próximo do Sol e o menor do Sistema Solar. Sua superfície é extremamente quente durante o
+                                    dia e muito fria à noite, devido à falta de uma atmosfera densa para reter calor. Mercúrio não tem luas e tem uma
+                                    atmosfera muito tênue composta por oxigênio, sódio e hidrogênio.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Vênus</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards4">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_planet_Venus_floating_2.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_surface_of_the_planet_1 (1).jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards4">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards4">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards4" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards4"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Diâmetro: <span>12.104 km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Massa: <span>4,87 x 10²⁴ kg</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Gravidade: <span>8,87 m/s²</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Rotação: <span>243 dias (retrógrada)</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Órbita ao <br> redor do Sol: <span>225 dias</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Distância <br> média do Sol: <span>108,2 milhões km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Atmosfera principal: <span>CO₂, N₂</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Temperatura média: <span>464°C</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Número de luas: <span>0</span>
+                                </h5>
+                                <p class="card-text">
+                                    Vênus é o segundo planeta a partir do Sol e é conhecido por ser o planeta mais quente do Sistema Solar, com uma
+                                    atmosfera densa composta principalmente por dióxido de carbono. Seu efeito estufa extremo eleva as temperaturas a
+                                    níveis muito altos. Vênus não possui luas e tem uma rotação retrógrada, o que significa que gira no sentido oposto
+                                    ao da maioria dos planetas.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Saturno</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards5">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_planet_Saturn_floating_0.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/imagem/istockphoto-1443811161-612x612.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards5">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards5">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards5" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards5"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Diâmetro: <span>116.460 km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Massa: <span>5,68 x 10²⁶ kg</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Gravidade: <span>10,44 m/s²</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Rotação: <span>10h 42m</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Órbita ao <br> redor do Sol: <span>29,5 anos terrestres</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Distância <br> média do Sol: <span>1,4 bilhões km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Atmosfera principal: <span>H₂, He</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Temperatura média: <span>-139°C</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Número de luas: <span>83 (principais: Titã, Encélado, Mimas)</span>
+                                </h5>
+                                <p class="card-text">
+                                    Saturno é o segundo maior planeta do Sistema Solar, famoso por seus impressionantes anéis formados por gelo e
+                                    rochas. Sua atmosfera é composta principalmente por hidrogênio e hélio. Com 83 luas conhecidas, sendo Titã a maior,
+                                    Saturno é um dos planetas mais fascinantes, e seu sistema de anéis é único no Sistema Solar.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Júpiter</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards6">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_planet_Jupiter_floatin_3.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_planet_Jupiter_floatin_2.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards6">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards6">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards5" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards5"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Diâmetro: <span>139.820 km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Massa: <span>1,90 x 10²⁷ kg</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Gravidade: <span>24,79 m/s²</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Rotação: <span>9h 56m</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Órbita ao <br> redor do Sol: <span>12 anos terrestres</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Distância <br> média do Sol: <span>778,5 milhões km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Atmosfera principal: <span>H₂, He</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Temperatura média: <span>-108°C</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Número de luas: <span>79 (principais: Ganimedes, Io, Europa, Calisto)</span>
+                                </h5>
+                                <p class="card-text">
+                                    Júpiter é o maior planeta do Sistema Solar, composto principalmente por hidrogênio e hélio. Possui uma atmosfera
+                                    turbulenta com tempestades gigantescas, como a famosa Grande Mancha Vermelha. Júpiter tem 79 luas conhecidas,
+                                    incluindo as quatro grandes luas galileanas: Ganimedes, Io, Europa e Calisto. Sua forte gravidade influencia todo o
+                                    Sistema Solar.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Urano</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards7">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_planet_Uranus_floating_2.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/imagem/Leonardo_Kino_XL_Create_an_image_of_the_surface_of_the_planet_2.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards7">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards7">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards5" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards5"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">
+                                Diâmetro: <span>50.724 km</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Massa: <span>8,68 x 10²⁵ kg</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Gravidade: <span>8,69 m/s²</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Rotação: <span>17h 14m</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Órbita ao <br> redor do Sol: <span>84 anos terrestres</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Distância <br> média do Sol: <span>2,9 bilhões km</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Atmosfera principal: <span>H₂, He, CH₄</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Temperatura média: <span>-197°C</span>
+                            </h5>
+                            <h5 class="card-title">
+                                Número de luas: <span>27 (principais: <br> Titânia, <br>Oberon, <br>Umbriel)</span>
+                            </h5>
+                            <p class="card-text">
+                                Urano é o sétimo planeta do Sistema Solar e é conhecido por sua inclinação extrema, com um eixo de rotação quase
+                                paralelo ao plano de sua órbita. Esta inclinação peculiar faz com que seus polos experimentem longos períodos de
+                                escuridão e luz intensa. Sua atmosfera é composta principalmente por hidrogênio, hélio e metano, que lhe confere uma
+                                cor azul-esverdeada. Urano possui 27 luas conhecidas, com Titânia, Oberon e Umbriel sendo algumas das mais notáveis.
+                            </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Netuno</h3>
+                            </div>
+                            <div class="carousel slide" id="carousel-cards8">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imagens/imagem/images (9).jpeg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imagens/imagem/images (10).jpeg" alt="" class="d-block w-100">
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-cards8">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-cards8">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-slide-to="0" data-bs-target="#carousel-cards5" class="active"></button>
+                                        <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-cards5"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Diâmetro: <span>49.244 km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Massa: <span>1,02 x 10²⁶ kg</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Gravidade: <span>11,15 m/s²</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Rotação: <span>16h 6m</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Órbita ao <br> redor do Sol: <span>164,8 anos terrestres</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Distância <br> média do Sol: <span>4,5 bilhões km</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Atmosfera principal: <span>H₂, He, CH₄</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Temperatura média: <span>-214°C</span>
+                                </h5>
+                                <h5 class="card-title">
+                                    Número de luas: <span>14 (principais: <br> Tritão, <br>Nereida)</span>
+                                </h5>
+                                <p class="card-text">
+                                    Netuno é o oitavo planeta do Sistema Solar e é conhecido por sua cor azul intensa, que resulta da presença de metano
+                                    em sua atmosfera. É o terceiro maior planeta em diâmetro e o quarto maior em massa. Netuno tem uma atmosfera
+                                    composta principalmente por hidrogênio, hélio e metano, e possui 14 luas conhecidas, com Tritão sendo a maior e mais
+                                    notável devido ao seu comportamento único, incluindo uma órbita retrógrada.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rodape" class="mt-4">
+            <div class="footer">
+                <div class="container">
+                    <p>&copy; 2024 <a href="https://github.com/gabrielboulhosa">Gabriel Boulhosa</a>. Todos os direitos reservados.</p>
+                    
+                </div>
+            </div>
+        </section>
+   </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
